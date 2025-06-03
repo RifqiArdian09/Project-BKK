@@ -1,16 +1,14 @@
-## Nama anggota kelompok:
-1.Risto Benito Adiaka(ketua)
-2.Rifqi Ardian (fullstack programmer)
-3.Salman Abdul Aziz (fullstack programmer)
-4.Farel Setiawan Nugraha Gusni (Dokumentasi)
-5.Wiratama Agung Kusuma (Dokumentasi)
+## 👥 Nama Anggota Kelompok
+1. **Risto Benito Adiaka** – Ketua  
+2. **Rifqi Ardian** – Fullstack Programmer  
+3. **Salman Abdul Aziz** – Fullstack Programmer  
+4. **Farel Setiawan Nugraha Gusni** – Dokumentasi  
+5. **Wiratama Agung Kusuma** – Dokumentasi
 
 
 # 📰 News Portal
 
 Portal berita berbasis Laravel 12 yang modern, ringan, dan responsif, menggunakan Tailwind CSS dan Filament Admin Panel.
-
-
 
 ## 🛠️ Tech Stack
 - Laravel 12
@@ -27,8 +25,7 @@ Pastikan sudah terinstal di sistem kamu:
 
 ### 1. Clone project
 ```bash
-git clone https://github.com/arditam/News-Portal.git
-cd News-Portal
+git clone https://github.com/arditam/Project-BKK.git
 ```
 
 ### 2. Setup database pada komputer anda, lalu masukkan kredensial-kredensialnya ke file .env.
@@ -36,7 +33,7 @@ cd News-Portal
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=news_portal
+DB_DATABASE=db_bkknew15
 DB_USERNAME=root
 DB_PASSWORD=
 ```
@@ -66,6 +63,12 @@ php artisan serve
 ```bash
 php artisan make:filament-user
 ```
+
+### 9. Menjalankan fungsi notifikasi ,export,dan import filament
+```bash
+php artisan make:filament-user
+```
+
 
 
 
