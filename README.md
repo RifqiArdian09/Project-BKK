@@ -61,7 +61,7 @@ php artisan serve
 php artisan make:filament-user
 ```
 
-### 9. Menjalankan fungsi notifikasi ,export,dan import filament
+### 9. Menjalankan fungsi notifikasi,export,dan import filament
 ```bash
 php artisan queue:work
 ```
