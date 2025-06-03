@@ -63,8 +63,14 @@ php artisan make:filament-user
 
 ### 9. Menjalankan fungsi notifikasi ,export,dan import filament
 ```bash
-php artisan make:filament-user
+php artisan queue:work
 ```
+### 10. Kalau gambar tidak muncul jalankan
+```bash
+rd public\storage    
+php artisan storage:link
+```
+
 
 
 
