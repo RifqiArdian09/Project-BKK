@@ -1,0 +1,116 @@
+    body {
+      font-family: 'Nunito Sans', sans-serif;
+      background-color: #f9fafb;
+    }
+
+    .card {
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      height: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+      background: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+    
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: currentColor;
+      z-index: 2;
+    }
+    
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    }
+    
+    .card-content {
+      position: relative;
+      z-index: 3;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+    }
+    
+    .icon-container {
+      transition: all 0.3s ease;
+      width: 64px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+    }
+    
+    .card:hover .icon-container {
+      transform: rotate(5deg) scale(1.1);
+    }
+    
+    .arrow {
+      transition: transform 0.3s ease;
+    }
+    
+    .card:hover .arrow {
+      transform: translateX(5px);
+    }
+    
+    .card-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.03;
+      z-index: 1;
+      pointer-events: none;
+      background-color: currentColor;
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 0.6s ease forwards;
+    }
+    
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.3s; }
+    .delay-4 { animation-delay: 0.4s; }
+    .delay-5 { animation-delay: 0.5s; }
+    .delay-6 { animation-delay: 0.6s; }
+    
+    /* Focus styles for accessibility */
+    a:focus {
+      outline: 2px solid currentColor;
+      outline-offset: 2px;
+    }
+    
+    /* Skip to content link for accessibility */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: white;
+      padding: 8px;
+      z-index: 100;
+    }
+    
+    .skip-link:focus {
+      top: 0;
+    }
+
+    
