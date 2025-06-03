@@ -65,7 +65,7 @@ php artisan make:filament-user
 ```bash
 php artisan queue:work
 ```
-### 10. Kalau gambar tidak muncul jalankan
+### 10. Kalau gambar tidak muncul 
 ```bash
 rd public\storage    
 php artisan storage:link
