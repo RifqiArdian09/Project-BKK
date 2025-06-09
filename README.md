@@ -12,11 +12,6 @@
 - Filament
 - MySQL
 
-## 📋 Prerequisites
-Pastikan sudah terinstal di sistem kamu:
-- PHP ^8.2
-- Composer ^2.2
-- MySQL
-  
+
 
 
